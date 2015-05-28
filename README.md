@@ -35,7 +35,7 @@ docker run -d --link jolly_poitras:db -p 80 jackie/magento
 ```
 Get IP address by docker inspect container_id
 
-Browse:IP address. 
+Browse: IP address. 
 
 - eg: http://172.17.1.24
 
