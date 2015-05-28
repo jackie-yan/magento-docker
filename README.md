@@ -22,13 +22,22 @@ by running
 ```no-highlight
 docker ps
 ```
+This mysql container will create magento database with sample data and magento user.
+
+- Database Name: magento
+- User Name: user
+- User Password: password
+
+Now, link magento app container to mysql container
 
 ```no-highlight
 docker run -d --link jolly_poitras:db -p 80 jackie/magento 
 ```
 Get IP address by docker inspect container_id
 
-Browse:IP address. eg: http://172.17.1.24
+Browse:IP address. 
+
+- eg: http://172.17.1.24
 
 
 #Configuration
